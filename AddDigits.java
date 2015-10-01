@@ -19,8 +19,11 @@ public class AddDigits {
 		//it will keep looping if number is greater or equal to 10
 		 while (num >= 10) {
 	            int sum = 0;
+	    		//it will keep looping if number is greater or equal to 0
 	            while (num > 0) {
+	            	//use Mod to find the remainder
 	                sum += num % 10;
+	            	//use Division to find the number
 	                num /= 10;
 	            }
 	            num = sum;
